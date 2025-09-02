@@ -1,31 +1,38 @@
 # 🌾 Agri-Commodity Price Forecasting
 
 This project focuses on forecasting agricultural commodity prices using time-series analysis.  
-We use a cleaned dataset (`Cleaned_Dataset.csv`) that contains daily price information for multiple commodities and centres across India, up to the year **2014**.  
+We use historical data (up to **2014**) to build forecasting models such as **ARMA, ARIMA, and LSTM**.  
 
 ---
 
-## 📂 Dataset
-- **File:** `Cleaned_Dataset.csv`  
-- **Columns:**
-  - `Date` → Daily record of prices (till 2014)  
-  - `Centre_Name` → Market/Centre name  
-  - `Commodity_Name` → Name of the commodity (e.g., Onion, Potato, Pulses)  
-  - `Season` → Season information  
-  - `Price` → Recorded price  
+## 📂 Project Structure
+- `Crop_Price_ARMA.ipynb` → Notebook for AR/ARMA-based price forecasting  
+- `Crop_Price_Prediction.ipynb` → Notebook for ARIMA/LSTM and extended experiments  
+- `README.md` → Project documentation  
+
+---
+
+## 📊 Dataset
+- Dataset contains **daily prices** of agricultural commodities across different centres.  
+- Columns typically include:
+  - `Date`  
+  - `Centre_Name`  
+  - `Commodity_Name`  
+  - `Season`  
+  - `Price`  
+
+⚠️ The available dataset has records **only up to 2014**. Forecasts are generated for later years using these historical values.  
 
 ---
 
 ## ⚙️ Methods Used
-- **AR / ARIMA Models** → Statistical forecasting methods for trend and seasonality  
+- **AR / ARMA / ARIMA** → Capturing time-series trends and seasonality  
 - **LSTM** → Deep learning model for sequential data forecasting  
-
-The models are trained on historical data (till 2014) and can forecast prices for upcoming years.
 
 ---
 
 ## 🚀 How to Run
-1. Clone the repository:
+1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/lokeshreddyayyaswamy/Agri_Horticulture_Crop_Price_Prediction.git
+   cd Agri_Horticulture_Crop_Price_Prediction
