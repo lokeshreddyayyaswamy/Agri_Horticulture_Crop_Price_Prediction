@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# Environment files
+.env
+.venv/
+*.egg-info/
+*.egg
+*.whl
+
+# OS files
+.DS_Store
+
+# Model checkpoints and large files
+*.pth
+*.pt
+*.h5
+*.ckpt
